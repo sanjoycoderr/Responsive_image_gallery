@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>resposive image gallery</title>
+	<style type="text/css">
+		.container{
+			width: 80%;
+			margin:40px auto;
+			display: grid;
+			grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+			grid-gap: 20px;
+		}
+		.box{
+		}
+		.box img{
+			height: 100%;
+			width: 100%;
+			border-radius: 10px;
+		}
+		.image img:hover{
+			transform: scale(1.2);
+			cursor: pointer;
+		}
+		.box .image img{
+			transition: all 0.1s linear 0.3s;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="box">
+			<div class="image">
+				<img src="img/a.jpg">
+			</div>
+		</div>
+
+
+		<div class="box">
+			<div class="image">
+				<img src="img/b.jpg">
+			</div>
+		</div>
+
+		<div class="box">
+			<div class="image">
+				<img src="img/c.jpg">
+			</div>
+		</div>
+
+		<div class="box">
+			<div class="image">
+				<img src="img/d.jpg">
+			</div>
+		</div>
+
+		<div class="box">
+			<div class="image">
+				<img src="img/e.jpg">
+			</div>
+		</div>
+
+		<div class="box">
+			<div class="image">
+				<img src="img/f.jpg">
+			</div>
+		</div>
+
+		<div class="box">
+			<div class="image">
+				<img src="img/g.jpg">
+			</div>
+		</div>
+
+		<div class="box">
+			<div class="image">
+				<img src="img/h.jpg">
+			</div>
+		</div>
+	</div>
+</body>
+</html>
